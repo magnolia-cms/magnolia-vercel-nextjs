@@ -1,10 +1,4 @@
-# Minimal Headless SPA Demos
-
-The new Visual SPA Editor allows authors to edit your SPA, reducing your ongoing maintenance duties. (win!) But you get to keep everything fully headless.
-
-This demo shows you how to use the basic features for both React and Angular.
-
-![The App](magnolia/_dev/README-screenshot-app.png)
+# Vercel Integration
 
 ## Pages and Components
 
@@ -12,7 +6,6 @@ The demo contains:
 
 -   Basic page template
 -   Contact page template
-
 -   Header component
 -   Paragraph component
 -   Image component
@@ -21,8 +14,6 @@ The demo contains:
 -   Expander component
 
 -   Navigation component
-
-## Configuring REST and DAM security
 
 ### DAM
 
@@ -35,29 +26,12 @@ In `Access control lists` tab modify `Dam` workspace by allowing `Read-only` acc
 
 ### Next.js SSR
 
-You will need to create a root page with the `Next.js SSR: Basic` template and name it `nextjs-ssr-minimal`.
-
-Go to `/spa/nextjs-ssr-minimal` on the terminal and run `npm install`, and then `npm run build && npm start`.
-
-It will start start the Next.js server.
-
-All Magnolia specific configurations can be find in `[[...pathname]].js` file.
-
-# Create Sample Content
-
-**_Either_** import some content, or create it manually.
-
-### Import:
-
-**_In the Pages app_**, Use the 'Import' action (with nothing selected) and select the appropriate file from `/magnolia/_dev/content-to-import/`, depending on which 'flavor' you are using.
+You will need to create a root page with the `Next.js SSR: Basic` template and name it `vercel-demo`.
 
 ### Manually:
 
 Open the `Pages` app in Magnolia and **_click Add Page_** add either
 
--   A `Next.js SSR: Basic` **_template_** and name it `nextjs-ssr-minimal`
+-   A `Next.js SSR: Basic` **_template_** and name it `vercel-demo`
 
 > The page name is important as the SPA's are hardcoded to treat those names as the base of the app.
-
-Then add components into the `Main` or `Extras` area of the page.
-You can also add additional pages as children of that page.
