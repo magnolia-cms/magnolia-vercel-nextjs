@@ -20,8 +20,6 @@ The demo contains:
 In order for images to be displayed:
 Open the Security app, open the `Roles` tab, edit the `rest-anonymous` role, go to `Web access` tab, `Add new` with this path `/dam/*` set to GET.
 
-![Image Access for Anonymous](magnolia/_dev/README-security-anonymous-dam.png)
-
 In `Access control lists` tab modify `Dam` workspace by allowing `Read-only` access to `Selected and sub nodes` to `/`.
 
 ### Next.js SSR
