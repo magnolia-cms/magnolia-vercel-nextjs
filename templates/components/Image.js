@@ -1,11 +1,20 @@
 import React from 'react';
+import Image from 'next/image';
 
-const Image = (props) => (
-  <img
-    className='Image'
-    src={process.env.NEXT_PUBLIC_MGNL_HOST + '/dam/' + props.image['@id'] + props.image['@path']}
-    alt='Etiam Purus'
-  />
-);
-
-export default Image;
+export default function MyImage(props) {
+	const src =
+		process.env.NEXT_PUBLIC_MGNL_HOST +
+		'/dam/' +
+		props.image['@id'] +
+		props.image['@path'];
+	return (
+		<div className="Image">
+			<Image
+				src={src}
+				alt="Etiam Purus"
+				layout="fill"
+				objectFit="cover"
+			/>
+		</div>
+	);
+}
